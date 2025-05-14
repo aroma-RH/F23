@@ -308,7 +308,7 @@ let totalHours = 0;
 let rowCount = 0;
 
 data.forEach(function(row, index) {
-    if (row[5] === "FINCA 20") {
+    if (row[5] === "FINCA 23") {
         let tr = document.createElement("tr");
 
         row.forEach(function(cell, colIndex) {
@@ -528,7 +528,7 @@ window.onload = highlightRows;
         .then(data => {
             
             let filteredData = data
-                .filter(row => row[5] === "FINCA 20")
+                .filter(row => row[5] === "FINCA 23")
                 .map(row => [row[0], row[1], row[2], row[3], formatDate(row[4]), row[5]]);
 
             if (filteredData.length < 2) {
@@ -582,7 +582,7 @@ function downloadExcel1() {
         .then(data => {
             
             let filteredData = data
-                .filter(row => row[5] === "FINCA 20")
+                .filter(row => row[5] === "FINCA 23")
                 .map(row => [row[0], row[1], row[2], row[3], formatDate(row[4]), row[5]]);
 
             if (filteredData.length < 2) {
