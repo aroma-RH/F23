@@ -652,12 +652,12 @@
                     <span>Gestion de Présence</span>
                 </button>
                 <div class="sub-nav" id="customers-subnav1">
-                <a href="https://aroma-rh.github.io/F20POINTAGE/">
+                <a href="rpointage.html">
                     <button class="nav-item">
                         <span>POINTAGE</span>
                     </button>
                 </a>
-                <a href="https://aroma-rh.github.io/F20GFHFGHGFHGFHHGFH/">
+                <a href="reffe.html">
                     <button class="nav-item">
                         <span>EFFECTIF</span>
                     </button>
@@ -910,7 +910,7 @@ document.getElementById('customers-toggle').addEventListener('click', function()
         let uniqueGroups = new Set();
         let missingNames = [];
 
-        const filteredData = data.filter(row => row[5] === 'FINCA 20');
+        const filteredData = data.filter(row => row[5] === 'FINCA 23');
 
         filteredData.forEach(row => {
             if (row.some(cell => cell && typeof cell === 'string' && cell.trim() !== "")) {
@@ -1136,7 +1136,7 @@ function displayData1(data) {
     tableBody.innerHTML = ''; 
     let uniquetache = new Set();
     
-    const filteredData = data.slice(1).filter(row => row[1] === 'FINCA 20');  
+    const filteredData = data.slice(1).filter(row => row[1] === 'FINCA 23');  
 
     filteredData.forEach(row => {
         if (row.some(cell => cell && typeof cell === 'string' && cell.trim() !== "")) {
